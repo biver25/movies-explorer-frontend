@@ -1,0 +1,128 @@
+.header {
+  padding: 15px 0;
+  margin: 0 14px;
+  display: flex;
+  align-items: center;
+  min-width: 212px;
+  box-sizing: border-box;
+  justify-content: space-between;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 1.6;
+  color: #fff;
+}
+
+.header__logo {
+  background: url(../../images/header__logo.svg);
+  height: 38px;
+  min-width: 38px;
+  padding: 0;
+  margin: 3px 14px 3px 0;
+}
+
+.header__container {
+  display: flex;
+  width: 100%;
+  /*justify-content: flex-end;*/
+  justify-content: space-between;
+  box-sizing: border-box;
+  min-width: 132px;
+  align-items: center;
+}
+
+.header__movies-container {
+  margin: 0;
+  padding: 0;
+
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.header__movies {
+  color: #fff;
+  border-style: none;
+  background-color: transparent;
+  margin: 0 16px 0 30px;
+  padding: 0;
+
+}
+
+.header__movies-saved {
+  color: #fff;
+  border-style: none;
+  background-color: transparent;
+  padding: 0;
+  font-weight: 400;
+}
+
+.header__account {
+  margin: 0;
+  padding: 6px 10px;
+  font-size: 14px;
+  line-height: 16px;
+  border: 2px solid rgba(170, 170, 170, .2);
+  border-radius: 50px;
+  width: 100px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.header__account-logo {
+  background: url(../../images/header__account-logo.svg);
+  height: 14px;
+  width: 12px;
+  color: #fff;
+  margin-right: 7px;
+  opacity: 1;
+}
+
+.header__acount-text {
+  border-style: none;
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  opacity: 1;
+  margin: 0;
+  padding: 0;
+}
+
+/*authorization*/
+.header__authorization {
+  display: flex;
+  min-width: 132px;
+
+  display: none;
+}
+
+.header__register-btn {
+  border: none;
+  margin: 0 14px 0 0;
+  padding: 0;
+  background-color: transparent;
+
+}
+
+.header__login-btn {
+  background-color: #3ddc84;
+  border-radius: 3px;
+  border-style: none;
+  border-top-width: 5px;
+  border-bottom-width: 5px;
+  border-right-width: 12px;
+  border-left-width: 12px;
+  width: 54px;
+  height: 26px;
+  margin: 0;
+  padding: 0;
+}
+
+.header__menu {
+  background: url(../../images/header__menu.svg);
+  height: 43px;
+  width: 40px;
+  margin-bottom: 1px;
+  display: none;
+}
