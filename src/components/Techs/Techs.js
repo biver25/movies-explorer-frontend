@@ -1,9 +1,10 @@
 import './Techs.css';
+import { info } from '../../utils/info';
 
 function Techs(props){
-  const techs = [
-    'HTML', 'CSS', 'JS', 'React', 'Git', 'Express.js', 'mongoDB'
-  ]
+  //const techs = [
+  //  'HTML', 'CSS', 'JS', 'React', 'Git', 'Express.js', 'mongoDB'
+  //]
   return (
     <div className="techs">
       <h1 className="techs__head-title">Технологии</h1>
@@ -12,7 +13,7 @@ function Techs(props){
         которые применили в дипломном проекте.</p>
       <ul className="techs__list">
         {
-          techs.map((tech) =>
+          info.techs.map((tech) =>
             <li className="techs__list-item" key={tech}>
               <p>{tech}</p>
             </li>
