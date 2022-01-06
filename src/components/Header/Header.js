@@ -1,4 +1,4 @@
-import './Header.css'
+import './Header.css';
 
 function Header(props) {
   return (
@@ -21,7 +21,7 @@ function Header(props) {
         <div className="header__menu"></div>
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default Header;

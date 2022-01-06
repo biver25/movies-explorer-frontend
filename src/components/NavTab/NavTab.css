@@ -1,0 +1,22 @@
+.nav {
+  display: flex;
+  justify-content: center;
+}
+
+.nav__btn {
+  color: #fff;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 1.6;
+  height: 26px;
+  width: 82px;
+  background-color: #303030;
+  border-radius: 6px;
+  border-style: none;
+  font-style: normal;
+  padding: 0;
+}
+
+.nav__techs {
+  margin: 0 6px;
+}

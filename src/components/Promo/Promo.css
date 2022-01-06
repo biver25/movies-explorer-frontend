@@ -1,0 +1,23 @@
+.promo {
+  margin: 14px 14px 0;
+  background-color: #272727;
+  min-height: 569px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 17px;
+}
+
+.promo__title {
+  font-weight: 400;
+  font-size: 29px;
+  line-height: 1.28;
+  text-align: center;
+  margin: 220px 0 0 0;
+  padding: 0;
+  font-weight: 400;
+  letter-spacing: -.04em;
+}
