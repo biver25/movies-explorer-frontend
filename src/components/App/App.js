@@ -1,19 +1,21 @@
+import { Routes, Route } from 'react-router-dom';
 import './App.css';
 import Header from '../Header/Header';
-import Promo from '../Promo/Promo';
-import AboutProject from '../AboutProject/AboutProject';
-import Techs from '../Techs/Techs';
-import AboutMe from '../AboutMe/AboutMe';
+import Main from '../Main/Main';
+import Movies from '../Movies/Movies';
+import SavedMovies from '../SavedMovies/SavedMovies';
 import Footer from '../Footer/Footer';
+
 
 function App() {
   return (
     <div className="page">
       <Header />
-      <Promo />
-      <AboutProject />
-      <Techs />
-      <AboutMe />
+      <Routes>
+        <Route path="/" element={<Main />} />
+        <Route path="/movies" element={<Movies />} />
+        <Route path="/saved-movies" element={<SavedMovies />} />
+      </Routes>
       <Footer />
     </div>
   );

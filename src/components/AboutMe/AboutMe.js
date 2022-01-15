@@ -14,7 +14,7 @@ function AboutMe(props) {
       <div className="me__social-section">
         {
           info.links.map((link) =>
-            <a className="me__social-link" href={link.link} target="_blank" rel="noreferrer">
+            <a className="me__social-link" href={link.link} key={link.name} target="_blank" rel="noreferrer">
               {link.name}
             </a>
           )

@@ -14,4 +14,48 @@
   border-color: #424242;
   border-width: 1px;
   padding-bottom: 21px;
+  margin: 0;
 }
+
+.footer__link-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0;
+  padding: 30px 0 18px 0;
+}
+
+.footer__link-item {
+  text-align: center;
+  margin: 0 0 12px 0;
+}
+
+.footer__link {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 1.21;
+  transition: opacity .5s ease;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.footer__link:hover {
+  opacity: .6;
+  text-decoration: underline;
+}
+
+.footer__copyright {
+  color: #8B8B8B;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 1.21;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
