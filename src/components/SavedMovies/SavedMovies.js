@@ -1,17 +1,19 @@
 import './SavedMovies.css';
 import SearchForm from '../SearchForm/SearchForm';
 import MoviesList from '../MoviesList/MoviesList';
+import Header from '../Header/Header';
+import Footer from '../Footer/Footer';
 
-
-function SavedMovies (props) {
+function SavedMovies ({ isDesktop, isMobile }) {
   return (
-    <section className="movies">
-      <SearchForm />
-      <MoviesList isSaved={true}/>
-      <button className="movies__btn-more">
-        Ещё
-      </button>
-    </section>
+    <>
+      <Header isDesktop={isDesktop}/>
+      <section className="movies movies_saved">
+        <SearchForm isMobile={isMobile}/>
+        <MoviesList isSaved={true}/>
+      </section>
+      <Footer />
+    </>
   )
 }
 

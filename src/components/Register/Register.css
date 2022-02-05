@@ -1,0 +1,144 @@
+.form {
+  width: calc(100% - 60px);
+  min-height: 100vh;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.form__title-container {
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 253px;
+  align-items: center;
+  width: 100%;
+}
+
+.form__title-logo {
+  width: 38px;
+  height: 38px;
+  background: url('../../images/header__logo.svg');
+}
+
+.form__title {
+  margin: 50px auto 24px;
+  text-align: center;
+  padding: 0;
+  font-size: 24px;
+  line-height: 1.21;
+  font-style: normal;
+  font-weight: 500;
+  width: 100%;
+}
+
+.form__label {
+  margin: 6px 0 0;
+  font-size: 12px;
+  line-height: 1.21;
+  font-style: normal;
+  font-weight: 400;
+  color: #8B8B8B;
+}
+
+.form__label:first-of-type {
+  margin-top: 0;
+}
+
+.form__input {
+  border-style: none;
+  border-bottom: 1px solid #424242;
+  background: transparent;
+  padding: 0 0 10px 0;
+  outline: none;
+  color: #fff;
+  margin: 5px 0 6px;
+  font-size: 14px;
+  line-height: 1.21;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.form__input_errored {
+  color: #EE3465;
+}
+
+.form__input-error {
+  color: #EE3465;
+  font-size: 10px;
+  line-height: 1.21;
+  font-style: normal;
+  font-weight: 400;
+  height: 12px;
+  visibility: hidden;
+}
+
+.form__input-error:last-of-type {
+  margin-bottom: 65px;
+}
+
+.form__input-error_visible {
+  visibility: visible;
+}
+
+.form__btn {
+  background: #4285F4;
+  border-style: none;
+  border-radius: 3px;
+  height: 45px;
+  color: #fff;
+  font-size: 12px;
+  line-height: 1.21;
+  font-style: normal;
+  font-weight: 500;
+  padding: 0;
+  margin-top: 157px;
+}
+
+.form__bottom-text {
+  margin: 14px 0 30px;
+  padding: 0;
+  text-align: center;
+  color: #8B8B8B;
+  font-size: 12px;
+  line-height: 1.21;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.form__bottom-link {
+  margin-left: 7px;
+  color: #4285F4;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 630px) {
+
+
+  .form {
+    justify-content: center;
+    max-width: 396px;
+    margin: auto;
+  }
+
+  .form__btn {
+    margin-top: 69px;
+    font-size: 14px;
+  }
+
+  .form__title-container {
+    align-items: flex-start;
+    margin: 0;
+    min-height: 147px;
+  }
+  .form__title {
+    margin: 40px 0 40px;
+    text-align: start;
+  }
+
+  .form__bottom-text {
+    margin-bottom: 0;
+    font-size: 14px;
+  }
+}

@@ -23,14 +23,14 @@ const movies = [
     image: image3,
     name: 'В погоне за Бенкси',
     link: 'https://www.kinopoisk.ru/film/1390163/',
-    saved: false,
+    saved: true,
     duration: 102,
   },
   {
     image: image4,
     name: 'Баския: Взрыв реальности',
     link: 'https://www.kinopoisk.ru/film/1081536/',
-    saved: false,
+    saved: true,
     duration: 102,
   },
   {

@@ -26,7 +26,6 @@
 
 .movie__btn-save {
   background: url('../../images/btn-save.svg');
-  fill: white;
   background-color: #313131;
   width: 24px;
   height: 24px;
@@ -35,6 +34,13 @@
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
+}
+
+.movie__btn-save_active {
+  background: url('../../images/btn-save-active.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #313131;
 }
 
 .movie__btn-remove {
@@ -48,10 +54,11 @@
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
+  visibility: visible;
 }
 
-.movie__btn-save_active {
-  fill: tomato;
+.movie__btn-remove_hidden {
+  visibility: hidden;
 }
 
 .movie__duration {
@@ -60,4 +67,25 @@
   line-height: 1.21;
   color: #8B8B8B;
   margin: 6px 0 0;
+}
+
+
+@media screen and (min-width: 630px) {
+  .movie {
+    margin-top: 30px;
+  }
+
+  .movie__caption {
+    font-size: 13px;
+  }
+
+  .movie__duration {
+    font-size: 11px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .movie {
+    margin-top: 38px;
+  }
 }

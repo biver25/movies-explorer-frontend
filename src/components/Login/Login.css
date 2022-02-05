@@ -1,0 +1,10 @@
+.form__btn_signin {
+  margin-top: 226px;
+}
+
+@media screen and (min-width: 630px) {
+  .form__btn_signin {
+    margin-top: 179px;
+  }
+
+}

@@ -59,3 +59,34 @@
   padding: 0;
 }
 
+@media screen and (min-width: 630px) {
+  .footer__container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-content: center;
+    padding: 20px 0;
+  }
+
+  .footer__link-list {
+    justify-content: end;
+    flex-direction: row;
+    padding: 0;
+  }
+
+  .footer__link-item {
+    text-align: center;
+    margin: 0;
+  }
+
+  .footer__link {
+    font-size: 13px;
+    margin-left: 20px;
+  }
+
+  .footer__copyright {
+    align-self: center;
+    color: #fff;
+    font-size: 13px;
+  }
+}
