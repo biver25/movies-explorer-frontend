@@ -7,4 +7,12 @@
     margin-top: 179px;
   }
 
+  .form__input-error:last-of-type {
+    margin-bottom: 65px;
+  }
+
+  .form__btn {
+    margin-top: 69px;
+  }
+
 }

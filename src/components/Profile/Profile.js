@@ -2,7 +2,7 @@ import React from 'react';
 import './Profile.css';
 import Header from '../Header/Header';
 
-function Profile ({ userName, userEmail }) {
+function Profile ({ userName, userEmail, isDesktop, isLoggedIn }) {
 
   const [ email, setEmail ] = React.useState(userEmail);
   const [ name, setName ] = React.useState(userName);
@@ -17,7 +17,7 @@ function Profile ({ userName, userEmail }) {
 
   return (
     <>
-      <Header />
+      <Header isDesktop={isDesktop} isLoggedIn={isLoggedIn}/>
       <section className="profile">
         <form className="profile__form">
           <h1 className="profile__title">{`Привет, ${userName}`}</h1>

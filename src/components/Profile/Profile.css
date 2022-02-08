@@ -23,10 +23,12 @@
   justify-content: space-between;
   padding-bottom: 16px;
   margin-top: 17px;
+  height: 14px;
 }
 
 .profile__label {
   margin: 0;
+  padding: 0;
   font-size: 11px;
   line-height: 1.21;
   font-style: normal;
@@ -62,7 +64,7 @@
   font-size: 12px;
   line-height: 1.21;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
   padding: 0;
   margin-top: 363px;
   cursor: pointer;
@@ -81,7 +83,7 @@
 @media screen and (min-width: 630px) {
   .profile__form {
     justify-content: center;
-    max-width: 396px;
+    max-width: 410px;
     margin: auto;
   }
 
@@ -91,7 +93,7 @@
 
   .profile__btn {
     font-size: 13px;
-    margin-top: 210px;
+    margin-top: 194px;
   }
 
   .profile__btn:last-of-type {

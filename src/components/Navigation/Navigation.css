@@ -39,7 +39,7 @@
   margin: 0;
   text-align: center;
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
 }
 
 .menu__list-item {

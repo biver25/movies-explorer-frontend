@@ -1,17 +1,17 @@
 import React from 'react';
 import './MoviesListItem.css';
 
-function MoviesListItem ({ movie, isSaved }) {
+function MoviesListItem ({ movie, isSaved, isMobile }) {
   const duration = `${Math.floor(movie.duration / 60)}ч ${movie.duration % 60}м`;
 
   const [isMouseOn, setIsMouseOn] = React.useState(false);
-  const mouseHover = (e) => { setIsMouseOn(true)}
+  const mouseHover = () => { setIsMouseOn(true)}
   const mouseLeave = () => { setIsMouseOn(false)}
 
   return (
     <article className="movie" onMouseEnter={mouseHover} onMouseLeave={mouseLeave}>
       <a className="movie__link" href={movie.link} target="_blank" rel="noreferrer">
-        <img className="movie__poster" src={movie.image} alt={movie.name} />
+        <img className="movie__poster" src={movie.image} alt={movie.name} href={movie.link} target="_blank" rel="noreferrer"/>
       </a>
       <div className="movie__caption-cantainer">
         <p className="movie__caption">{movie.name}</p>
@@ -20,7 +20,7 @@ function MoviesListItem ({ movie, isSaved }) {
             ? ( <button
                   className="movie__btn-remove"
                   style={
-                    isMouseOn
+                    isMouseOn || isMobile
                     ? {visibility: 'visible'}
                     : {visibility: 'hidden'}
                   }

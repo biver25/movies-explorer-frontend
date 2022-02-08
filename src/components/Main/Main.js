@@ -5,10 +5,12 @@ import Techs from '../Techs/Techs';
 import AboutMe from '../AboutMe/AboutMe';
 import Footer from '../Footer/Footer';
 
-function Main (props) {
+function Main ({ isDesktop, isLoggedIn}) {
   return (
     <>
-      <Header />
+      <Header
+        isDesktop={isDesktop}
+        isLoggedIn={isLoggedIn}/>
       <Promo />
       <AboutProject />
       <Techs />

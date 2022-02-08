@@ -9,6 +9,7 @@ import Profile from '../Profile/Profile';
 import Login from '../Login/Login';
 import NotFoundPage from '../NotFoundPage/NotFoundPage';
 import Navi from '../Navigation/Navigation';
+import Preloader from '../Preloader/Preloader';
 import { info } from '../../utils/info';
 import { config } from '../../utils/config';
 
@@ -18,7 +19,8 @@ function App() {
   const [isWindowWidth, setIsWindowWidth] = React.useState(window.innerWidth);
   const isMobile = isWindowWidth < config.MAX_MOBILE_SCREEN;
   const isDesktop = isWindowWidth > 1000;
-  const [isLoggedIn, setIsLoggedIn] = React.useState(true);
+  const [isLoggedIn, setIsLoggedIn] = React.useState(false);
+  const [isLoading, setIsLoading] = React.useState(false);
 
   React.useEffect(() => {
 
@@ -32,20 +34,43 @@ function App() {
   return (
     <div className="page">
       <Routes>
-        <Route path="/" element={<Main />} />
-        <Route path="/movies"
-          element={<Movies
+        <Route path="/"
+          element={<Main
             isDesktop={isDesktop}
             isMobile={isMobile}
             isLoggedIn={isLoggedIn}
           />}
         />
-        <Route path="/saved-movies" element={<SavedMovies isDesktop={isDesktop} isMobile={isMobile}/>} />
+        <Route path="/movies"
+          element={<Movies
+            isDesktop={isDesktop}
+            isMobile={isMobile}
+            isLoggedIn={isLoggedIn}
+            isLoading={isLoading}
+          />}
+        />
+        <Route path="/saved-movies"
+          element={<SavedMovies
+            isDesktop={isDesktop}
+            isMobile={isMobile}
+            isLoggedIn={isLoggedIn}
+            isLoading={isLoading}
+          />}
+        />
         <Route path="/signup" element={<Register />} />
-        <Route path="/profile" element={<Profile userName={info.name} userEmail={info.email} />} />
+        <Route path="/profile"
+          element={<Profile
+            userName={info.name}
+            userEmail={info.email}
+            isDesktop={isDesktop}
+            isMobile={isMobile}
+            isLoggedIn={isLoggedIn}
+          />}
+        />
         <Route path="/signin" element={<Login />} />
         <Route path="/*" element={<NotFoundPage />} />
         <Route path="/navi" element={<Navi isDesktop={isDesktop}/>} />
+        <Route path="/preloader" element={<Preloader />} />
       </Routes>
     </div>
   );

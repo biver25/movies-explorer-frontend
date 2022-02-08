@@ -2,11 +2,11 @@ import './NavTab.css'
 
 function NavTab(props) {
   return (
-    <div className="nav">
-      <button className="nav__btn nav__about-proj">О проекте</button>
-      <button className="nav__btn nav__techs">Технологии</button>
-      <button className="nav__btn nav__student">Студент</button>
-    </div>
+    <nav className="nav">
+      <a href="#project" className="nav__link nav__about-proj">О проекте</a>
+      <a href="#project" className="nav__link nav__techs">Технологии</a>
+      <a href="#project" className="nav__link nav__student">Студент</a>
+    </nav>
   );
 }
 

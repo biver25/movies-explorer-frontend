@@ -35,7 +35,7 @@
 
 .form__label {
   margin: 6px 0 0;
-  font-size: 12px;
+  font-size: 10px;
   line-height: 1.21;
   font-style: normal;
   font-weight: 400;
@@ -137,8 +137,12 @@
     text-align: start;
   }
 
+  .form__input-error:last-of-type {
+    margin-bottom: 24px;
+  }
+
   .form__bottom-text {
-    margin-bottom: 0;
+    margin: 16px 0 0;
     font-size: 14px;
   }
 }

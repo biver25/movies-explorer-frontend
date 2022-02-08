@@ -16,7 +16,7 @@ const movies = [
     image: image2,
     name: 'Киноальманах «100 лет дизайна»',
     link: 'https://www.kinopoisk.ru/film/1118071/',
-    saved: false,
+    saved: true,
     duration: 102,
   },
   {
@@ -30,7 +30,7 @@ const movies = [
     image: image4,
     name: 'Баския: Взрыв реальности',
     link: 'https://www.kinopoisk.ru/film/1081536/',
-    saved: true,
+    saved: false,
     duration: 102,
   },
   {

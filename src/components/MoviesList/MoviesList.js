@@ -10,12 +10,12 @@ movies.forEach ((movie) => {
 console.log(savedMovies);
 
 
-function MoviesList ({ isSaved }) {
+function MoviesList ({ isSaved, isMobile }) {
   return (
     <section className="movies-list">
       { isSaved
         ? savedMovies.map((movie) =>
-        <MoviesListItem isSaved={isSaved} movie={movie} key={movie.name}/>
+        <MoviesListItem isSaved={isSaved} isMobile={isMobile} movie={movie} key={movie.name}/>
         )
         : movies.map((movie) =>
         <MoviesListItem isSaved={isSaved} movie={movie} key={movie.name}/>
