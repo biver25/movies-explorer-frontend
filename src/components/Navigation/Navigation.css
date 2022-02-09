@@ -1,0 +1,161 @@
+.menu {
+  min-height: calc( 100vh - 120px - 46px );
+  width: 100%;
+  background: #202020;
+  padding: 120px 0  46px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  visibility: hidden;
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+.menu_opened {
+  visibility: visible;
+}
+
+.menu_type_desktop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%
+}
+
+.menu__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.menu__list_type_desktop {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.menu__list-item {
+  margin-top: 24px;
+}
+
+.menu__list-item_type_hide {
+  display: none;
+}
+
+.menu__list-item_type_desktop {
+  margin: 0 16px 0 30px;
+  padding: 0;
+}
+
+.menu__list-item_type_desktop:last-of-type {
+  margin: 0;
+}
+
+.menu__link {
+  font-size: 18px;
+  line-height: 1.21;
+  font-weight: 500;
+  font-style: normal;
+  text-decoration: none;
+  color: #fff;
+  padding-bottom: 7px;
+}
+
+.menu__link_type_desktop {
+  font-size: 13px;
+  line-height: 1.38;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  color: #fff;
+}
+
+.menu__link_type_desktop:first-of-type {
+  font-weight: 500;
+}
+
+.menu__link:hover {
+  border-bottom: 2px solid #fff;
+}
+
+.menu__btn-close {
+  background: url(../../images/btn-exit.svg);
+  height: 32px;
+  width: 32px;
+  position: absolute;
+  top: 13.44px;
+  right: 13.44px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  transition: opacity .5s ease;
+  outline: none;
+}
+
+.menu__btn-close:hover {
+  opacity: .6;
+}
+
+.menu__account {
+  margin: 0;
+  padding: 6px 10px;
+  font-size: 14px;
+  line-height: 16px;
+  border: 2px solid rgba(170, 170, 170, .2);
+  border-radius: 50px;
+  width: 100px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.menu__account-logo {
+  background: url(../../images/header__account-logo.svg);
+  height: 14px;
+  width: 12px;
+  color: #fff;
+  margin-right: 7px;
+  opacity: 1;
+}
+
+.menu__acount-text {
+  border-style: none;
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  opacity: 1;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (min-width: 630px) {
+  .menu {
+    min-height: calc( 100vh - 135px - 90px );
+    padding: 135px 0  90px;
+    width: 520px;
+  }
+
+  .menu__list-item {
+    margin-top: 28px;
+  }
+
+  .menu__btn-close {
+    top: 22.44px;
+    right: 22.44px;
+
+  }
+}

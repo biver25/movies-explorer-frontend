@@ -1,0 +1,38 @@
+.nav {
+  display: flex;
+  justify-content: center;
+}
+
+.nav__link {
+  color: #fff;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 16px;
+  height: 26px;
+  width: 82px;
+  background-color: #303030;
+  border-radius: 6px;
+  border-style: none;
+  font-style: normal;
+  text-decoration: none;
+  text-align: center;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.nav__techs {
+  margin: 0 6px;
+}
+
+@media screen and (min-width: 630px) {
+  .nav__link {
+    font-size: 12px;
+    height: 36px;
+    width: 96px;
+    padding: 10px;
+  }
+
+  .nav__techs {
+    margin: 0 10px;
+  }
+}
