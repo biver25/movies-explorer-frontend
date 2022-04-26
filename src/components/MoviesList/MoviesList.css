@@ -13,9 +13,10 @@
   }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1230px) {
   .movies-list {
     padding-top: 42px;
+    grid-template-columns: repeat(auto-fit, minmax(257.5px, 1fr));
     row-gap: 0px;
     column-gap: 20px;
 

@@ -61,6 +61,8 @@
   .not-found__link {
     position: unset;
     margin-top: 184px;
+    position: absolute;
+    bottom: 30px;
   }
 
 }

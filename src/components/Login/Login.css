@@ -2,6 +2,12 @@
   margin-top: 226px;
 }
 
+.form__btn_disabled {
+  background: #F8F8F8;
+  color: #C2C2C2;
+  cursor: unset;
+}
+
 @media screen and (min-width: 630px) {
   .form__btn_signin {
     margin-top: 179px;

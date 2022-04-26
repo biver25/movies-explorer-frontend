@@ -5,7 +5,7 @@ import { info } from '../../utils/info';
 
 function AboutMe(props) {
   return (
-    <section className="me">
+    <section className="me" id="me">
       <h1 className="me__head-title">Студент</h1>
       <div className="me__section">
         <img className="me__photo" src={myPhoto} alt="Фотокарточка" />

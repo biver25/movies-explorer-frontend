@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Header.css';
 import Navigation from '../Navigation/Navigation';
 
@@ -23,8 +24,8 @@ function Header({isDesktop , isLoggedIn}) {
       {isLoggedIn
       ? ""
       : <div className="header__authorization">
-           <button className="header__register-btn">Регистрация</button>
-           <button className="header__login-btn">Войти</button>
+           <Link to="/signup" className="header__register-btn">Регистрация</Link>
+           <Link to="/signin" className="header__login-btn">Войти</Link>
          </div>
       }
       {isLoggedIn && !isDesktop ? <button className="header__navigation" onClick={handleNaviOpen}></button> : ""}

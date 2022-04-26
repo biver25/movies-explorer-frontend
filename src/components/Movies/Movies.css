@@ -1,5 +1,6 @@
 .movies {
   margin: 0 10px;
+
 }
 
 .movies__btn-more {
@@ -19,13 +20,17 @@
   height: 36px
 }
 
+.movies_btn-more_hide {
+  display: none;
+}
+
 @media screen and (min-width: 630px) {
   .movies {
     margin: 0 30px;
   }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1230px) {
   .movies {
     margin: 0 70px;
   }

@@ -6,7 +6,7 @@ function Techs(props){
   //  'HTML', 'CSS', 'JS', 'React', 'Git', 'Express.js', 'mongoDB'
   //]
   return (
-    <div className="techs">
+    <div className="techs" id="techs">
       <h1 className="techs__head-title">Технологии</h1>
       <h2 className="techs__title">7 технологий</h2>
       <p className="techs__article">На курсе веб-разработки мы освоили технологии,
